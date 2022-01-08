@@ -93,11 +93,11 @@ nav{
 		align-self: center;
 		align-content: center;
 	}
-	.menu li a.logo{
+	.menu li a .logo{
 		font-size: 21px;
 		margin-right: 0;
 	}
-	.menu li a.contacts{
+	.menu li a .contacts{
 		margin-right: 0;
 	}
 
