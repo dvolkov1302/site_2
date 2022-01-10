@@ -1,104 +1,103 @@
 *{
-	padding: 0;
 	margin: 0;
-	font-family: 'Roboto Condensed', sans-serif;
+	padding: 0;
 }
-body, html{
-	overflow-x: hidden;
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	width: 100%;
+	background: #fff;
+	display: flex;
+}
+.header__logo{
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 800;
+	font-size: 24px;
+	cursor: pointer;
+	margin-top: 45px;
+	margin-left: 12%;
 }
 nav{
-	margin: auto;
-	min-width: 1100px;
-	width: 100%;
+	margin-top: 45px;
+	margin-left: 40%;
 }
-#checkbox-menu,
-.toggle{
-	display: none;
+.topnav a{
+	color: #000;
+	text-align: center;
+	padding: 12px 16px;
+	font-size: 14px;
+	font-weight: bold;
 }
-.menu{
-	padding: 0;
-	margin: 0;
-	height: 50px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	list-style-type: none;
-}
-.menu li a{
-	color:  #000;
-	text-decoration: none;
-	align-self: center;
-	font-size: 13px;
-	padding: 10px 15px;
-	transition: background .2s linear;
-}
-.menu li a:hover{
+.topnav a:hover{
 	background: #ffcc01;
 	border-radius: 3px;
 }
-.menu li a.logo{
-	font-size: 25px;
-	margin-right: 240px;
-}
-.menu li a.contacts{
-	margin-right: 100px;
+.topnav .icon{
+	display: none;
 }
 
 
 
 
 
-@media screen and (max-width:  765px) {
-	.toggle{
-		clear: both;
+
+
+@media screen and (max-width:  1200px){
+	nav{
+		margin-left: 20%;
+	}
+}
+
+
+
+@media screen and (max-width:  1105px){
+	nav{
+		margin-left: 10%;
+	}
+}
+
+
+
+
+@media screen and (max-width:  1010px){
+	.topnav a{
+		display: none;
+	}
+	.topnav a.icon{
+		float: right;
+		margin-top: -17px;
 		display: block;
-		text-align: center;
-		font-size:  18px;
-		line-height: 40px;
-		width: 100%;
 		color: #000;
-		background: #ffcc01;
-		transition: all .1s linear;
+		font-size: 25px;
 	}
-	.toggle:hover{
-		background: #d3a900;
+	nav{
+		width: 100%;
 	}
-	#checkbox-menu:checked + label .touch li{
-		opacity:  1;
-		visibility: visible;
-		transition: all .7s linear;
+	.topnav.responsive{
+		position: relative;
+		top: 50px;
+		left: -200px;
 	}
-	#checkbox-menu:checked + label .touch{
-		height: 350px;
+	header .topnav.responsive{
+		height: 340px;
 	}
-	.menu{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-		height: 0;
-		transition: height .3s linear;
+	.topnav.responsive a.icon{
+		position: absolute;
+		top: -50px;
+		right: -200px;
 	}
-	.menu li{
-		display: flex;
-		align-self: center;
-		width: 95%;
-		opacity: 0;
-		visibility: hidden;
-	}
-	.menu li a{
-		width: 95%;
-		text-align: center;
-		align-self: center;
-		align-content: center;
-	}
-	.menu li a .logo{
-		font-size: 21px;
-		margin-right: 0;
-	}
-	.menu li a .contacts{
-		margin-right: 0;
+	.topnav.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
 	}
 
 }
