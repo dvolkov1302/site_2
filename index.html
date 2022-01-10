@@ -1,27 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>САВиКо</title>
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="style/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<div class="header__logo"><p>САВиКо</p></div>
-		<nav>
-			<div class="topnav" id="myTopnav">
-				<a href="#">О нас</a>
-				<a href="#">Наши работы</a>
-				<a href="#">Как заказать?</a>
-				<a href="#">Контакты</a>
-				<a href="#" id="menu" class="icon">&#9776;</a>
+	<header id="header" class="fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000">
+			<div class="container">
+				<a href="" class="navbar-brand">САВиКо</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navContent">
+					<ul class="navbar-nav me-auto mb-3 mb-lg-0">
+						<li class="nav-item">
+							<a href="#" class="text-white nav-link">Главная</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="text-white nav-link">О нас</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="text-white nav-link">Выполненные работы</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="text-white nav-link">Услуги</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="text-white nav-link">Контакты</a>
+						</li>
+					</ul>
+					<form action="#" class="d-flex">
+						<input type="search" placeholder="Поиск" class="form-control me-2">
+						<button type="button" class="btn btn-outline-light">Поиск</button>
+					</form>
+				</div>
 			</div>
 		</nav>
 	</header>
 
 
-	<script src="js/script.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
