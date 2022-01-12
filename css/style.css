@@ -16,7 +16,7 @@
 }
 #hero .container{
     position: relative;
-    padding-top: 75px;
+    padding-top: 40px;
 }
 #hero h1{
     margin: 0;
@@ -39,7 +39,7 @@
     line-height: 26px;
     color: #fff;
 }
-#hero .icon-box h3hover{
+#hero .icon-box h3:hover{
     color: #ffc451;
 }
 
