@@ -133,6 +133,29 @@
     opacity: 1;
     bottom: 15px;
 }
+.contact h2{
+    text-align: center;
+}
+.contact .info .info-icon{
+    background: #ffc451;
+    float: left;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.contact .info h4{
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.contact .info p{
+    padding: 0 0 0 60px;
+    font-size: 14px;
+}
 .footer-top{
     background: #151515;
     color: #fff;
